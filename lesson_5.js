@@ -1,5 +1,5 @@
 //Hoisting var let const
-
+//
 // console.log(a);
 // console.log(b);
 // console.log(c);
@@ -8,9 +8,9 @@
 // const c = 3;
 
 //параметры функций
-
-// const users = ['Константин Констатинопольский', 'Иван Иванов', 'Анастасия Преображенская', 'Константин Важенин']
 //
+// // const users = ['Константин Констатинопольский', 'Иван Иванов', 'Анастасия Преображенская', 'Константин Важенин']
+// //
 // const firstContainer = document.querySelector('.first-section')
 // // const secondContainer = document.querySelector('.second-section')
 // // const usersList = users.map(function(user) {
@@ -21,15 +21,13 @@
 //               ${children.join('')}
 //           </${componentTag}>`
 // }
-//
-// firstContainer.innerHTML = createComponent('p', 'text', '<span>ололо</span>', '777')
-//
-// // secondContainer.innerHTML = createComponent('ul','iist', ...usersList)
-
+// //
+// firstContainer.innerHTML = createComponent('p', 'text', '<span>вставка со спаном</span>', 'Вставка без обёртки напрямую в родителя')
+// //
+// // secondContainer.innerHTML = createComponent('ul', 'list', ...usersList)
 
 // Hoisting для функций
-
-
+//
 // const firstContainer = document.querySelector('.first-section')
 //
 // // insertComponent(firstContainer, 'section', 'paragraph', `<p>asdasd</p>`)
@@ -48,9 +46,8 @@
 //
 // insertComponent(firstContainer, 'section', 'paragraph', `<p>Абра кадабра</p>`)
 
-
 // внутренние и внешние перменные (замыкание - счётчик)
-
+//
 // let outer = function () {
 //   let x = 0
 //   return function inner() {
@@ -65,8 +62,15 @@
 // console.log(sum())
 // console.log(sum())
 
-//контекст
+//отложеныне функции
+// const sayHello = function() {
+//   console.log('Hello')
+// }
+//
+// setTimeout(sayHello, 2000)
 
+//контекст
+//
 // function foo1() {
 //   console.log(this)
 // }
@@ -99,8 +103,8 @@
 
 
 // bind call apply
-
-
+//
+//
 // const tiger = {
 //   name: 'Р-р-руди'
 // }
@@ -114,7 +118,7 @@
 // // // // meow.bind(tiger, '!!')
 
 // Потеря контекста
-
+//
 // const cat = {
 //   name: 'Барсик',
 //   meow() {
